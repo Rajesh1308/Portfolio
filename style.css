@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(7, 8, 8);
+}
+
+hr {
+    border: 2px solid cyan;
+    width: 100%;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+#container {
+    display: flex;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: cyan;
+    
+    
+}
+.list {
+    padding-top: 10px;
+    color: black;
+    justify-content: left;
+    text-align: left;
+    flex-direction: row;
+    
+
+}
+li {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan;
+    border-radius: 7px;
+    width: 70px;
+    text-align: center;
+}
+
+li:hover {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: cyan;
+    box-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 25px cyan;
+    border-radius: 7px;
+    width: 70px;
+    text-align: center;
+
+}
+
+#box {
+    flex-direction: column;
+    padding-left: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 5px cyan, 0 0 25px cyan;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: cyan;
+    width: 90%;
+    height: 570px;
+    color: cyan;
+    display: flex;
+    margin: auto;
+    background-color: rgb(6, 3, 10);
+   
+}
+
+#box:hover {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 5px cyan, 0 0 50px cyan;
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: cyan;
+    width: 90%;
+    height: 570px;
+    color: cyan;
+    display: flex;
+    margin: auto;
+    background-color: rgb(6, 3, 10);
+  
+}
+
+pre{
+    font-size: 15px;
+    font-family:monospace;
+    padding: 25px;
+    text-align:center;
+}
+
+#a {
+    color: black;
+}
+
+
+.listb {
+    display: flex;
+    padding-top: 0px;
+    background-color: black;
+    color: cyan;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    flex-direction: row;
+}
+.hlistb {
+    display: flex;
+}
+
+.listbl {
+    padding-top: 5px;
+    background-color: black;
+    border-radius: 0px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.listbl:hover {
+    padding-top: 5px;
+    width: 100px;
+    background-color: black;
+    border-radius: 0px;
+}
+
+#ab {
+    color: cyan;
+}
+
