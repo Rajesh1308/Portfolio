@@ -70,6 +70,7 @@ nav ul li a:hover{
 }
 
 .btn{
+    color: black;
     background-color: cyan;
     text-decoration: none;
     border: 2px solid transparent;
@@ -181,4 +182,86 @@ button:hover{
     font-weight: bold;
     padding: 13px 30px;
     border-radius: 30px;
+}
+
+.contact {
+    background: black;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title h2{
+    color: cyan;
+    font-size: 75px;
+    width: 1130px;
+    margin: 10px auto;
+    text-align: center;
+    transition: transform .4s;
+}
+
+.title h2:hover{
+    transform: scale(1.2);
+    color: cyan;
+    font-size: 75px;
+    width: 1130px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: 150px;
+    width: 125px;
+    padding: 20px 35px;
+    background-color: black;
+    border: 3px solid;
+    border-color: cyan;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px cyan;
+    transition: transform .4s;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    height: 150px;
+    width: 125px;
+    padding: 20px 35px;
+    background-color: black;
+    border: 3px solid;
+    border-color: cyan;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 0 10px cyan, 0 0 25px cyan;
+}
+
+.card ion-icon{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: cyan;
+}
+
+
+.pra p{
+    color: cyan;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
 }
