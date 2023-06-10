@@ -115,13 +115,13 @@ h4{
     font-size: 20px;
 }
 
-.about{
+#about{
     width: 100%;
     padding: 100px 0px;
     background-color: rgb(11, 14, 14);
 
 }
-.about img{
+#about img{
     height: auto;
     width: 430px;
 }
@@ -264,4 +264,28 @@ button:hover{
     font-size: 16px;
     line-height: 27px;
     margin-bottom: 25px;
+}
+
+.qlink h4{
+    padding-left: 40px;
+    height: 40px;
+    color: white;
+    background-color: black;
+}
+ul li{
+    list-style-type: none;
+    line-height: 23px;
+}
+.qlist{
+    padding-left: 50px;
+    height: 100px;
+    color: white;
+    background-color: black;   
+}
+footer p{
+    padding-top: 30px;
+    color: white;
+    background-color: black;
+    height: 80px;
+    text-align: center;
 }
