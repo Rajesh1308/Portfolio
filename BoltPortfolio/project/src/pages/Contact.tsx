@@ -1,28 +1,30 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
-import ParallaxSection from '../components/ParallaxSection';
+// import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
+import ParallaxSection from "../components/ParallaxSection";
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   email: "",
+  //   subject: "",
+  //   message: "",
+  // });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle form submission
+  //   console.log("Form submitted:", formData);
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = (
+  //   e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  // ) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50 dark:from-black dark:via-gray-900 dark:to-black pt-20 pb-12">
@@ -37,26 +39,30 @@ const Contact: React.FC = () => {
             Get In Touch
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Ready to start your next project? Let's discuss how we can work together 
-            to bring your ideas to life.
+            Ready to start your next project? Let's discuss how we can work
+            together to bring your ideas to life.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-1 gap-12">
           {/* Contact Form */}
-          <ParallaxSection speed={0.2}>
+          {/* <ParallaxSection speed={0.2}>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-blue-200 dark:border-white/20"
             >
-              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Send Message</h2>
-              
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
+                Send Message
+              </h2>
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">Name</label>
+                    <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">
+                      Name
+                    </label>
                     <input
                       type="text"
                       name="name"
@@ -68,7 +74,9 @@ const Contact: React.FC = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">Email</label>
+                    <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">
+                      Email
+                    </label>
                     <input
                       type="email"
                       name="email"
@@ -80,9 +88,11 @@ const Contact: React.FC = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
-                  <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">Subject</label>
+                  <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">
+                    Subject
+                  </label>
                   <input
                     type="text"
                     name="subject"
@@ -93,9 +103,11 @@ const Contact: React.FC = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
-                  <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">Message</label>
+                  <label className="block text-gray-600 dark:text-gray-300 mb-2 font-medium">
+                    Message
+                  </label>
                   <textarea
                     name="message"
                     value={formData.message}
@@ -106,7 +118,7 @@ const Contact: React.FC = () => {
                     required
                   />
                 </div>
-                
+
                 <motion.button
                   type="submit"
                   className="w-full py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-semibold flex items-center justify-center cursor-hover"
@@ -118,7 +130,7 @@ const Contact: React.FC = () => {
                 </motion.button>
               </form>
             </motion.div>
-          </ParallaxSection>
+          </ParallaxSection> */}
 
           {/* Contact Info */}
           <div className="space-y-8">
@@ -129,10 +141,12 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-blue-200 dark:border-white/20"
               >
-                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Contact Information</h2>
-                
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
+                  Contact Information
+                </h2>
+
                 <div className="space-y-6">
-                  <motion.div 
+                  <motion.div
                     className="flex items-center cursor-hover"
                     whileHover={{ x: 10 }}
                   >
@@ -140,12 +154,16 @@ const Contact: React.FC = () => {
                       <Mail className="w-6 h-6 text-blue-400" />
                     </div>
                     <div>
-                      <div className="text-gray-800 dark:text-white font-medium">Email</div>
-                      <div className="text-gray-600 dark:text-gray-300">rajesh@example.com</div>
+                      <div className="text-gray-800 dark:text-white font-medium">
+                        Email
+                      </div>
+                      <div className="text-gray-600 dark:text-gray-300">
+                        rajesharulprakash.com
+                      </div>
                     </div>
                   </motion.div>
-                  
-                  <motion.div 
+
+                  <motion.div
                     className="flex items-center cursor-hover"
                     whileHover={{ x: 10 }}
                   >
@@ -153,12 +171,16 @@ const Contact: React.FC = () => {
                       <Phone className="w-6 h-6 text-green-400" />
                     </div>
                     <div>
-                      <div className="text-gray-800 dark:text-white font-medium">Phone</div>
-                      <div className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</div>
+                      <div className="text-gray-800 dark:text-white font-medium">
+                        Phone
+                      </div>
+                      <div className="text-gray-600 dark:text-gray-300">
+                        (+91) 979-196-1554
+                      </div>
                     </div>
                   </motion.div>
-                  
-                  <motion.div 
+
+                  <motion.div
                     className="flex items-center cursor-hover"
                     whileHover={{ x: 10 }}
                   >
@@ -166,8 +188,12 @@ const Contact: React.FC = () => {
                       <MapPin className="w-6 h-6 text-cyan-400" />
                     </div>
                     <div>
-                      <div className="text-gray-800 dark:text-white font-medium">Location</div>
-                      <div className="text-gray-600 dark:text-gray-300">San Francisco, CA</div>
+                      <div className="text-gray-800 dark:text-white font-medium">
+                        Location
+                      </div>
+                      <div className="text-gray-600 dark:text-gray-300">
+                        Coimbatore, Tamil Nadu, India
+                      </div>
                     </div>
                   </motion.div>
                 </div>
@@ -181,11 +207,13 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-blue-200 dark:border-white/20"
               >
-                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">Follow Me</h2>
-                
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
+                  Follow Me
+                </h2>
+
                 <div className="flex space-x-4">
                   <motion.a
-                    href="https://github.com"
+                    href="https://github.com/Rajesh1308"
                     target="_blank"
                     className="p-4 bg-white/5 rounded-xl cursor-hover"
                     whileHover={{ scale: 1.1, y: -5 }}
@@ -194,7 +222,7 @@ const Contact: React.FC = () => {
                     <Github className="w-6 h-6 text-gray-700 dark:text-white" />
                   </motion.a>
                   <motion.a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/in/rajesharulprakash"
                     target="_blank"
                     className="p-4 bg-white/5 rounded-xl cursor-hover"
                     whileHover={{ scale: 1.1, y: -5 }}
@@ -202,7 +230,7 @@ const Contact: React.FC = () => {
                   >
                     <Linkedin className="w-6 h-6 text-blue-400" />
                   </motion.a>
-                  <motion.a
+                  {/* <motion.a
                     href="https://twitter.com"
                     target="_blank"
                     className="p-4 bg-white/5 rounded-xl cursor-hover"
@@ -210,7 +238,7 @@ const Contact: React.FC = () => {
                     whileTap={{ scale: 0.9 }}
                   >
                     <Twitter className="w-6 h-6 text-cyan-400" />
-                  </motion.a>
+                  </motion.a> */}
                 </div>
               </motion.div>
             </ParallaxSection>
@@ -222,17 +250,25 @@ const Contact: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 dark:from-blue-500/20 dark:to-cyan-500/20 backdrop-blur-md rounded-2xl p-8 border border-blue-200 dark:border-white/20"
               >
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Available for Work</h3>
+                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+                  Available for Work
+                </h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  I'm currently available for freelance projects and full-time opportunities. 
-                  Let's create something amazing together!
+                  I'm currently available for freelance projects and full-time
+                  opportunities. Let's create something amazing together!
                 </p>
                 <motion.button
                   className="px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-xl font-medium cursor-hover"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() =>
+                    window.open(
+                      "https://calendly.com/rajesharulprakash/30min",
+                      "_blank"
+                    )
+                  }
                 >
-                  Schedule a Call
+                  Schedule a Call (Calendly)
                 </motion.button>
               </motion.div>
             </ParallaxSection>

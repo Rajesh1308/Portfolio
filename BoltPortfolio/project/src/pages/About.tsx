@@ -6,40 +6,46 @@ import ParallaxSection from "../components/ParallaxSection";
 const About: React.FC = () => {
   const experiences = [
     {
-      title: "Senior Software Developer",
-      company: "Tech Innovators Inc.",
-      period: "2022 - Present",
+      title: "Full Stack Developer Intern",
+      company: "RecurGrow",
+      period: "May 2025 - Present",
       description:
-        "Leading development of scalable web applications using React, Node.js, and cloud technologies.",
+        "Worked on full-stack solutions for AI-driven sales automation, including API development, caching (SWR), and Flask-based email tracking. Built automation pipelines, tested APIs with pytest, and streamlined deployments by managing CI/CD workflows on AWS EC2.",
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2020 - 2022",
+      title: "Software Developer Intern",
+      company: "The Yellow Network",
+      period: "Feb 2025 - April 2025",
       description:
-        "Developed and maintained multiple client projects with focus on performance and user experience.",
+        "Collaborated with founders to build a PaaS application, integrating RESTful APIs with Django & PostgreSQL, adding new features, and ensuring stability through testing, bug fixes, and Jest-based unit tests.",
     },
     {
-      title: "Frontend Developer",
-      company: "Creative Agency",
-      period: "2018 - 2020",
+      title: "IoT Squad Lead",
+      company: "GCT IEEE SB 81571",
+      period: "Feb 2024 - Feb 2025",
       description:
-        "Created responsive web interfaces and collaborated with design teams to implement pixel-perfect designs.",
+        "Led a 10+ member team in building an IoT-based smart orthotic device for real-time gait analysis, developing a Flask + socket.io backend for live data streaming, and deploying scalable, secure infrastructure on AWS ECS Fargate.",
     },
   ];
 
   const education = [
     {
-      degree: "Bachelors in Engineering",
-      institution: "Tech University",
-      period: "2016 - 2018",
-      description: "Specialized in Software Engineering and AI",
+      degree: "Bachelor of Information Technology",
+      institution: "Government College of Technology, Coimbatore",
+      period: "Oct 2021 - April 2025",
+      description: "",
+      grading: "CGPA",
+      score: "8.04/10",
     },
     {
-      degree: "Bachelor of Information Technology",
-      institution: "Engineering College",
-      period: "2012 - 2016",
-      description: "Graduated with First Class Honours",
+      degree: "Higher Secondary Education (HSC)",
+      institution:
+        "Sree Dharmasastha Matriculation Higher Secondary School, Coimbatore",
+      period: "July 2019 - June 2021",
+      description:
+        "Topper of the group with 96.33 percentage, and topper of Computer Science.",
+      grading: "Percentage",
+      score: "96.33%",
     },
   ];
 
@@ -56,10 +62,11 @@ const About: React.FC = () => {
             About Me
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate software developer with over 6 years of experience
-            in creating innovative digital solutions. I love turning complex
-            problems into simple, beautiful designs that deliver exceptional
-            user experiences.
+            I'm a curious full-stack developer who loves bringing ideas to life
+            with code. From building APIs and automations to experimenting with
+            cloud and IoT, I enjoy turning everyday challenges into smart,
+            usable solutions. For me, debugging isn't just fixing errors - it's
+            solving puzzles that make technology click
           </p>
         </motion.div>
 
@@ -144,6 +151,9 @@ const About: React.FC = () => {
                     <p className="text-gray-600 dark:text-gray-300">
                       {edu.description}
                     </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      {edu.grading}: {edu.score}
+                    </p>
                   </motion.div>
                 ))}
               </div>
@@ -169,25 +179,23 @@ const About: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <motion.div whileHover={{ scale: 1.05 }} className="cursor-hover">
                 <div className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                  50+
+                  2+
                 </div>
-                <p className="text-gray-700 dark:text-white">
-                  Projects Completed
-                </p>
+                <p className="text-gray-700 dark:text-white">Internships</p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="cursor-hover">
                 <div className="text-4xl font-bold text-cyan-600 dark:text-cyan-400 mb-2">
                   6+
                 </div>
                 <p className="text-gray-700 dark:text-white">
-                  Years Experience
+                  Courses & Badges
                 </p>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="cursor-hover">
                 <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">
-                  25+
+                  3+
                 </div>
-                <p className="text-gray-700 dark:text-white">Happy Clients</p>
+                <p className="text-gray-700 dark:text-white">Awards</p>
               </motion.div>
             </div>
           </motion.div>

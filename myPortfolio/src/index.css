@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+}
+
+::selection {
+  background: rgb(252, 147, 0);
+  color: black;
+}
