@@ -22,8 +22,8 @@ const Projects: React.FC = () => {
         "Pinecone",
         "Gemini API",
       ],
-      liveUrl: "https://github.com/rajesh/medical-chatbot", // replace with your repo/demo link
-      githubUrl: "https://github.com/rajesh/medical-chatbot",
+      liveUrl: "https://github.com/Rajesh1308/MedicalChatBot", // replace with your repo/demo link
+      githubUrl: "https://github.com/Rajesh1308/MedicalChatBot",
       gradient: "from-purple-500 to-pink-600",
     },
     {
