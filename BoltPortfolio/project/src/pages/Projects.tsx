@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion"; // useScroll, useTransform
+import { ExternalLink, Github } from "lucide-react";
 import ParallaxSection from "../components/ParallaxSection";
 
 const Projects: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const { scrollXProgress } = useScroll({ container: scrollRef });
-  const x = useTransform(scrollXProgress, [0, 1], [0, -2000]);
+  // const { scrollXProgress } = useScroll({ container: scrollRef });
+  // const x = useTransform(scrollXProgress, [0, 1], [0, -2000]);
 
   const projects = [
     {
